@@ -86,12 +86,3 @@ def outer_nonlocal():
     print("Output after using nonlocal - ", var_b)
 
 outer_nonlocal()
-
-def outer():
-    var_b = 5
-    def inner():
-        var_b = 10
-    inner()
-    print("Output without using nonlocal - ", var_b)
-
-outer()
