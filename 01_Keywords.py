@@ -1,4 +1,7 @@
-"""Code to provide details about Keywords being used in Python language"""
+"""Code to provide details about Keywords being used in Python language
+Keywords are the reserved words in Python. We cannot use a keyword as a variable name, function name or any other identifier.
+They are used to define the syntax and structure of the Python language. In Python, keywords are case sensitive."""
+
 import keyword
 
 # Scenario 1
@@ -86,3 +89,8 @@ def outer_nonlocal():
     print("Output after using nonlocal - ", var_b)
 
 outer_nonlocal()
+
+print()
+print("# Scenario 5")
+print("Providing all keywords in Python language!")
+print(keyword.kwlist)
