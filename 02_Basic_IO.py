@@ -16,10 +16,16 @@ In C++/C user can take multiple inputs in one line using scanf but in Python use
 
 Using split() method
 Using List comprehension
+
 Using split() method :
 This function helps in getting a multiple inputs from user . It breaks the given input by the specified separator.
 If a separator is not provided, then any white space is going to be a separator.
-Generally, user use a split() method to split a Python string. But, one can also use it in taking multiple input as well."""
+Generally, user use a split() method to split a Python string. But, one can also use it in taking multiple input as well.
+
+Using List comprehension :
+List comprehension is an elegant way to define and create list in Python.
+We can create lists just like mathematical statements in one line only.
+It is also used in getting multiple inputs from a user."""
 
 print()
 print("# Scenario 1")
@@ -54,3 +60,12 @@ print("Enter values by user in input_2 = ", user_input_2)
 
 get_multiple_values_from_end_user = list(map(int, input("Enter multiple numbers in this prompt = ").split()))
 print("All values provided by an end user = ", get_multiple_values_from_end_user)
+
+print()
+print("# Scenario 4")
+get_user_value_x, get_user_value_y = (int(x) for x in input("Enter 2 int values = ").split())
+print("Display value X = ", get_user_value_x)
+print("Display value X = ", get_user_value_y)
+
+get_users_value_for_x, get_users_value_for_y = (int(x) for x in input("Enter 2 integers = ").split())
+print("Final Output | X = {}, Y = {}".format(get_users_value_for_x, get_users_value_for_y))
