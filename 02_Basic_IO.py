@@ -25,7 +25,16 @@ Generally, user use a split() method to split a Python string. But, one can also
 Using List comprehension :
 List comprehension is an elegant way to define and create list in Python.
 We can create lists just like mathematical statements in one line only.
-It is also used in getting multiple inputs from a user."""
+It is also used in getting multiple inputs from a user.
+
+By default python’s print() function ends with a newline. A programmer with C/C++ background may wonder how to print without newline.
+Python’s print() function comes with a parameter called ‘end’. 
+By default, the value of this parameter is ‘\n’, i.e. the new line character. 
+You can end a print statement with any character/string using this parameter.
+
+The separator between the arguments to print() function in Python is space by default (softspace feature).
+Which can be modified and can be made to any character, integer or string as per our choice.
+The ‘sep’ parameter is used to achieve the same, it is found only in python 3.x or later. It is also used for formatting the output strings."""
 
 print()
 print("# Scenario 1")
@@ -69,3 +78,17 @@ print("Display value X = ", get_user_value_y)
 
 get_users_value_for_x, get_users_value_for_y = (int(x) for x in input("Enter 2 integers = ").split())
 print("Final Output | X = {}, Y = {}".format(get_users_value_for_x, get_users_value_for_y))
+
+print()
+print("# Scenario 5")
+demo_of_end_variable_1 = "GeeksforGeeks"
+demo_of_end_variable_2 = "Bangalore"
+print(demo_of_end_variable_1, end=" ")
+print(demo_of_end_variable_2, end=" ")
+demo_of_end_variable_3 = "PythonCoding"
+demo_of_end_variable_4 = "DjangoCoding"
+print(demo_of_end_variable_3, sep=" ")
+print(demo_of_end_variable_4, sep=" ")
+demo_of_end_variable_5 = "Server Side Coding"
+demo_of_end_variable_6 = "Client Side Coding"
+print(demo_of_end_variable_5, demo_of_end_variable_6, sep="-")
