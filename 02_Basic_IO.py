@@ -92,3 +92,13 @@ print(demo_of_end_variable_4, sep=" ")
 demo_of_end_variable_5 = "Server Side Coding"
 demo_of_end_variable_6 = "Client Side Coding"
 print(demo_of_end_variable_5, demo_of_end_variable_6, sep="-")
+
+print()
+print("# Scenario 6")
+get_multiple_numbers_from_end_user = input("Enter multiple numbers = ").split()
+final_sum_of_all_numbers_entered = 0
+for each_value_extracted in get_multiple_numbers_from_end_user:
+    change_type_from_string_to_int = int(each_value_extracted)
+    final_sum_of_all_numbers_entered += change_type_from_string_to_int
+
+print("Total sum of all integers that you entered was = ", final_sum_of_all_numbers_entered)
