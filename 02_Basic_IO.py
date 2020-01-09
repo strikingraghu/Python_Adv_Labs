@@ -36,6 +36,7 @@ The separator between the arguments to print() function in Python is space by de
 Which can be modified and can be made to any character, integer or string as per our choice.
 The ‘sep’ parameter is used to achieve the same, it is found only in python 3.x or later. It is also used for formatting the output strings."""
 
+from sys import stdin, stdout
 print()
 print("# Scenario 1")
 get_input_value_from_user = input("Enter your name = ")
@@ -102,3 +103,19 @@ for each_value_extracted in get_multiple_numbers_from_end_user:
     final_sum_of_all_numbers_entered += change_type_from_string_to_int
 
 print("Total sum of all integers that you entered was = ", final_sum_of_all_numbers_entered)
+
+print()
+print("# Scenario 7")
+def main():
+
+    users_input_values = stdin.readline()
+    users_input_array = [int(convert_to_int_value) for convert_to_int_value in users_input_values.split()]
+    summation = 0
+    for x_element in users_input_array:
+        summation += x_element
+    
+    print("Sum of all numbers entered =", end=" ")
+    stdout.write(str(summation))
+
+if __name__ == "__main__":
+    main()
