@@ -14,6 +14,14 @@ else:
 
 print()
 print("# Scenario 2")
+python_string_1 = "Hello, how are you doing?"
+print("Existing String Value = ", python_string_1)
+# Strings are immutable, hence elements of a String cannot be changed once it has been assigned
+python_string_1 = "Hello, welcome to GeeksForGeeks portal"
+print("Modified String Value = ", python_string_1)
+
+print()
+print("# Scenario 3")
 string_for_scenario_two = "GeeksForGeeksPythonProgrammingWebsite"
 another_pattern_match_for_string_activities = "Python"
 if another_pattern_match_for_string_activities in string_for_scenario_two:
@@ -22,7 +30,7 @@ else:
     print("Search Pattern N/A")
 
 print()
-print("# Scenario 3")
+print("# Scenario 4")
 def check_vowels(driver_string_to_validate, list_of_vowels):
     # casefold helps in ignoring cases
     driver_string_to_validate = driver_string_to_validate.casefold()
