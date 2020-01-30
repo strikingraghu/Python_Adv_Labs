@@ -16,7 +16,7 @@ print()
 print("# Scenario 2")
 python_string_1 = "Hello, how are you doing?"
 print("Existing String Value = ", python_string_1)
-# Strings are immutable, hence elements of a String cannot be changed once it has been assigned
+# strings are immutable, hence elements of a String cannot be changed once it has been assigned
 python_string_1 = "Hello, welcome to GeeksForGeeks portal"
 print("Modified String Value = ", python_string_1)
 
@@ -48,3 +48,15 @@ def check_vowels(driver_string_to_validate, list_of_vowels):
 driver_string_to_validate = "Geeks For Geeks Geeks For Geeks Geeks For Geeks"
 list_of_vowels = 'aeiou'
 print(check_vowels(driver_string_to_validate, list_of_vowels))
+
+print()
+print("# Scenario 5")
+py_string_01 = "Hey, welcome back! "
+py_string_02 = "How are things at your side?"
+py_string_03 = py_string_01 + py_string_02
+print("Existing String Value = ", py_string_03)
+# using 'del' keyword to delete a string from the code
+del py_string_01
+py_string_03 = py_string_01 + py_string_02
+print("New String Value (After del Usage) = ", py_string_03)
+# error should be noticed
